@@ -8,7 +8,7 @@ typedef long long ll;
 const int INF = 0x3f3f3f3f;
 
 void downAdjust(vector<int> &process, int low, int high) {
-    int i = 0, j = 2 * i + 1;
+    int i = low, j = 2 * i + 1;
     while (j <= high) {
         if (j + 1 <= high && process[j] < process[j + 1]) j = j + 1;
         if (process[i] >= process[j]) break;
