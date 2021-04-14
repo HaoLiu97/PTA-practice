@@ -7,10 +7,10 @@ typedef long long ll;
 
 const int INF = 0x3f3f3f3f;
 
-struct TreeNode {
+struct Node {
     int left = -1, right = -1;
 
-    TreeNode() {
+    Node() {
         left = -1;
         right = -1;
     }
